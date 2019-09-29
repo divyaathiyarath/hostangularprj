@@ -31,9 +31,9 @@ mongoose.connect("mongodb+srv://mongodb:mongodb@mycluster-rfooj.mongodb.net/test
 var MessageModel=mongoose.model('message',{
     message:String
 })
-app.get('/',(req,res)=>{
-    res.render("Welcome");
-});
+// app.get('/',(req,res)=>{
+//     res.render("Welcome");
+// });
 app.post('/readMsgApi',(req,res)=>{
 
    // console.log("Api"+req.body.message);
